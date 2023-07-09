@@ -1,0 +1,36 @@
+{
+    "name": "spryker-community/auth_remote_tokens",
+    "description": "Provide remote trusted openid-connect jwk",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SprykerCommunity\\AuthRemoteTokens\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dmytro Klyman",
+            "email": "sebastian.wagner@diva-e.com"
+        },
+        {
+            "name": "Sebastian Wagner",
+            "email": "dmytro.klyman@spryker.com"
+        }
+    ],
+    "require-dev": {
+        "spryker/code-sniffer": "^0.17.18"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "cs-check": "phpcs -p -s --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/",
+        "cs-fix": "phpcbf -p --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": false
+        }
+    }
+}
