@@ -1,7 +1,13 @@
-# auth_remote_tokens
+# Auth Remote Tokens
 
-extend your
+1. New plugin for remote auth tokens. Extend your
 `\Pyz\Client\Oauth\OauthDependencyProvider::getKeyLoaderPlugins`
-to provide our
+to register our
 `\Hackweekender\Client\AuthRemoteTokens\Plugin\Oauth\RemoteKeyLoaderPlugin`
+
+2. Fork of the `league/oauth2-server` module to add support of the `OpenSSLAsymmetricKey` object in `CryptKey`.
+
+```
+https://github.com/DmytroKlymanSpryker/oauth2-server
+```
 

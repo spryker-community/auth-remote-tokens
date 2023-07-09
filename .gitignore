@@ -1,0 +1,6 @@
+# IDEs
+.idea/
+.project/
+.vscode/
+
+/vendor/
